@@ -1,0 +1,12 @@
+[global]
+ioengine=libaio
+size=10G
+direct=1
+runtime=60
+group_reporting=1
+
+[latency_for_random_reads]
+rw=randread
+bs=4k
+iodepth=1
+numjobs=1

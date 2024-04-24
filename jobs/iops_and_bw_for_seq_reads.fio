@@ -1,0 +1,12 @@
+[global]
+ioengine=libaio
+size=10G
+direct=1
+runtime=60
+group_reporting=1
+
+[iops_and_bw_for_seq_reads]
+rw=read
+bs=4k
+iodepth=256
+numjobs=4
