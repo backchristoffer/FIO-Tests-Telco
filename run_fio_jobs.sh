@@ -2,7 +2,7 @@
 
 run_fio_job() {
     local section="$1"
-    fio --section="$section" /jobs/telco_tests.fio
+    fio $FIO_OPTIONS --section="$section" /jobs/telco_tests.fio
 }
 
 run_fio_job "iops_and_bw_for_rand_reads_and_writes"
