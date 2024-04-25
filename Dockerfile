@@ -6,6 +6,7 @@ RUN apk add --no-cache fio
 RUN apk upgrade libssl3 libcrypto3
 
 COPY jobs /jobs
+
 COPY run_fio_jobs.sh /run_fio_jobs.sh
 
 RUN chmod +x /run_fio_jobs.sh
@@ -13,4 +14,4 @@ RUN chmod +x /run_fio_jobs.sh
 VOLUME /data
 WORKDIR /data
 
-ENTRYPOINT ["/run_fio_jobs.sh"]
+ENTRYPOINT [ "/run_fio_jobs.sh" ]
