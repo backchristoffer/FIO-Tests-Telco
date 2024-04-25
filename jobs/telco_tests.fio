@@ -1,64 +1,79 @@
 [global]
-size=1GB
 direct=1
 ioengine=libaio
 time_based
 group_reporting
-runtime=60
+eta=1
 
 [iops_and_bw_for_rand_reads_and_writes]
 filename=iops_and_bw_for_rand_reads_and_writes.file
+size=50GB
 rw=randrw
 bs=4k
 iodepth=256
 numjobs=4
+runtime=60
 
 [iops_and_bw_for_rand_reads]
 filename=iops_and_bw_for_rand_reads.file
+size=1GB
 rw=randread
 bs=4k
 iodepth=256
 numjobs=4
+runtime=60
 
 [iops_and_bw_for_seq_reads]
 filename=iops_and_bw_for_seq_reads.file
+size=10GB
 rw=read
 bs=4k
 iodepth=256
 numjobs=4
+runtime=60
 
 [latency_for_random_reads_and_writes]
 filename=latency_for_random_reads_and_writes.file
+size=10GB
 rw=randrw
 bs=4k
 iodepth=1
 numjobs=1
+runtime=60
 
 [latency_for_random_reads]
 filename=latency_for_random_reads.file
+size=10GB
 rw=randread
 bs=4k
 iodepth=1
 numjobs=1
+runtime=60
 
 [throughput_for_rand_reads_and_writes]
 filename=throughput_for_rand_reads_and_writes.file
+size=50GB
 rw=randrw
 bs=64k
 iodepth=64
 numjobs=4
+runtime=60
 
 [throughput_for_rand_reads]
 filename=throughput_for_rand_reads.file
+size=10GB
 rw=randread
 bs=64k
 iodepth=64
 numjobs=4
+runtime=60
 
 [throughput_for_seq_reads]
 filename=throughput_for_seq_reads.file
+size=10GB
 rw=read
 bs=64k
 iodepth=64
 numjobs=4
+runtime=60
 
