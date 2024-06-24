@@ -1,6 +1,6 @@
 # Sample FIO tests
 
-## How to run EXAMPLE
+## This will run all sections from telco_test.fio sequentially
 ```
-podman run --privileged -v /tmp:/data quay.io/rhn_support_cback/telco_fio_tests:latest /jobs/telco_tests.fio
+podman run --privileged -v /tmp:/data quay.io/rhn_support_cback/telco_fio_tests:latest
 
